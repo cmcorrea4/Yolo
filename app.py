@@ -15,6 +15,19 @@ model.multi_label = False  # NMS multiple labels per box
 model.max_det = 1000  # maximum number of detections per image
 
 # take a picture with the camera
+st.title("Detección de Imágenes")
+
+model.iou= st.slider(
+    'Seleccione el treshold',
+    0.0, 1.0, (0.25, 0.75))
+st.write('IOU:', model.iou)
+
+model.conf = st.slider(
+    'Seleccione el treshold',
+    0.0, 1.0, (0.25, 0.75))
+st.write('Conf:', model.conf)
+
+
 picture = st.camera_input("Capturar foto",label_visibility='visible' )
 
 if picture:
