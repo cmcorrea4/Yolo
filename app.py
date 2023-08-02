@@ -17,15 +17,13 @@ model.max_det = 1000  # maximum number of detections per image
 # take a picture with the camera
 st.title("Detección de Imágenes")
 
-model.iou= st.slider(
-    'Seleccione el IoU',
-    0.0, 1.0)
-st.write('IOU:', model.iou)
+with sidebar:
+            model.iou= st.slider('Seleccione el IoU',0.0, 1.0)
+            st.write('IOU:', model.iou)
 
-model.conf = st.slider(
-    'Seleccione el Confidence',
-    0.0, 1.0)
-st.write('Conf:', model.conf)
+with sidebar:
+            model.conf = st.slider('Seleccione el Confidence',0.0, 1.0)
+            st.write('Conf:', model.conf)
 
 
 picture = st.camera_input("Capturar foto",label_visibility='visible' )
