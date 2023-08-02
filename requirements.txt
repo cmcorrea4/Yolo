@@ -1,4 +1,5 @@
 streamlit
+yolov5
 opencv-python-headless
 numpy
 Pillow
