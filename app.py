@@ -18,12 +18,12 @@ model.max_det = 1000  # maximum number of detections per image
 st.title("Detección de Imágenes")
 
 model.iou= st.slider(
-    'Seleccione el treshold',
+    'Seleccione el IoU',
     0.0, 1.0, (0.25, 0.75))
 st.write('IOU:', model.iou)
 
 model.conf = st.slider(
-    'Seleccione el treshold',
+    'Seleccione el Confidence',
     0.0, 1.0, (0.25, 0.75))
 st.write('Conf:', model.conf)
 
