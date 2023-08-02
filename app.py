@@ -18,6 +18,7 @@ model.max_det = 1000  # maximum number of detections per image
 st.title("Detección de Imágenes")
 
 with st.sidebar:
+            st.subheader('Parámetros de Configuración')
             model.iou= st.slider('Seleccione el IoU',0.0, 1.0)
             st.write('IOU:', model.iou)
 
