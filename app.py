@@ -19,12 +19,12 @@ st.title("Detección de Imágenes")
 
 model.iou= st.slider(
     'Seleccione el IoU',
-    0.0, 1.0, (0.25, 0.75))
+    0.0, 1.0)
 st.write('IOU:', model.iou)
 
 model.conf = st.slider(
     'Seleccione el Confidence',
-    0.0, 1.0, (0.25, 0.75))
+    0.0, 1.0)
 st.write('Conf:', model.conf)
 
 
