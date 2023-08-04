@@ -15,7 +15,7 @@ model.multi_label = False  # NMS multiple labels per box
 model.max_det = 1000  # maximum number of detections per image
 
 # take a picture with the camera
-st.title("Detección de Imágenes")
+st.title("Detección de Objetos en Imágenes")
 
 with st.sidebar:
             st.subheader('Parámetros de Configuración')
