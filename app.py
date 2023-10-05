@@ -1,8 +1,9 @@
 import cv2
-import yolov5
+from ultralytics import yolov5
 import streamlit as st
 import numpy as np
 import pandas as pd
+#from ultralytics import YOLO
 
 # load pretrained model
 model = yolov5.load('yolov5s.pt')
