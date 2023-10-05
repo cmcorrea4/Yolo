@@ -1,10 +1,10 @@
 streamlit
-#yolov5
+yolov5
 #numpy
 #Pillow
 #easyocr
 #streamlit
-#opencv-python-headless==4.5.5.64
+opencv-python-headless==4.5.5.64
 #Pillow
 #mmdet
 #mmocr
