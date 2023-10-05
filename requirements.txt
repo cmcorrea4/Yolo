@@ -1,4 +1,5 @@
 streamlit
+ultralytics
 yolov5
 #numpy
 #Pillow
