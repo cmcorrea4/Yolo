@@ -1,5 +1,5 @@
 import cv2
-from ultralytics import yolov5
+import yolov5
 import streamlit as st
 import numpy as np
 import pandas as pd
