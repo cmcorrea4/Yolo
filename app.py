@@ -5,6 +5,12 @@ import numpy as np
 import pandas as pd
 #from ultralytics import YOLO
 
+import sys
+sys.path.append('./ultralytics/yolo')
+
+from utils.checks import check_requirements
+
+
 # load pretrained model
 #model = yolov5.load('yolov5s.pt')
 model = yolov5.load('yolov5nu.pt')
