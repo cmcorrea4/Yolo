@@ -1,5 +1,5 @@
 streamlit
-ultralytics
+ultralytics==8.0.173
 yolov5
 #numpy
 #Pillow
